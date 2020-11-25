@@ -33,8 +33,8 @@ function register() {
 
 
 
-    if (quantity == "" || quantity < 0 || quantity > 11) {
-        document.getElementById("qtyError").innerHTML = "Quantity should be 1 - 10..!!";
+    if (quantity == "" || quantity < 1 || quantity > 12) {
+        document.getElementById("qtyError").innerHTML = "Quantity should be 1 - 12..!!";
         $(document).ready(function() {
             $("#qty").focus();
         });
