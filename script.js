@@ -1,4 +1,6 @@
 function register() {
+
+
     var firstName = document.getElementById('fname').value;
     var lasttName = document.getElementById('lname').value;
     var quantity = document.getElementById('qty').value;
@@ -9,58 +11,88 @@ function register() {
 
     if (firstName == "") {
         document.getElementById("fnameError").innerHTML = "This field is required..!!";
-        firstName.focus();
+        $(document).ready(function() {
+            $("#fname").focus();
+        });
+        return false;
     } else {
         document.getElementById("fnameError").innerHTML = "";
     }
 
 
+
     if (lasttName == "") {
         document.getElementById("lnameError").innerHTML = "This field is required..!!";
-        lasttName.focus();
+        $(document).ready(function() {
+            $("#lname").focus();
+        });
+        return false;
     } else {
         document.getElementById("lnameError").innerHTML = "";
     }
 
 
+
     if (quantity == "" || quantity < 0 || quantity > 11) {
         document.getElementById("qtyError").innerHTML = "Quantity should be 1 - 10..!!";
-        quantity.focus();
+        $(document).ready(function() {
+            $("#qty").focus();
+        });
+        return false;
     } else {
         document.getElementById("qtyError").innerHTML = "";
     }
 
 
+
     if (email == "") {
         document.getElementById("emailError").innerHTML = "This field is required..!!";
-        email.focus();
+        $(document).ready(function() {
+            $("#email").focus();
+        });
+        return false;
     } else {
         document.getElementById("emailError").innerHTML = "";
     }
 
 
+
     if (password == "") {
         document.getElementById("passwordError").innerHTML = "This field is required..!!";
-        password.focus();
+        $(document).ready(function() {
+            $("#password").focus();
+        });
+        return false;
     } else {
         document.getElementById("passwordError").innerHTML = "";
     }
 
 
+
+
     if (rePassword == "") {
         document.getElementById("rePasswordError").innerHTML = "This field is required..!!";
-        rePassword.focus();
+        $(document).ready(function() {
+            $("#retypePassword").focus();
+        });
+        return false;
     } else {
         document.getElementById("rePasswordError").innerHTML = "";
     }
+
 
 
     if (password != rePassword) {
         document.getElementById("rePasswordError").innerHTML = "Passwords are not match..!!";
-        rePassword.focus();
+        $(document).ready(function() {
+            $("#retypePassword").focus();
+        });
+        return false;
     } else {
         document.getElementById("rePasswordError").innerHTML = "";
     }
+
+
 
     window.location = "registered.html"; // Redirecting to register success page.
 
