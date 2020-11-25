@@ -8,7 +8,6 @@ function register() {
 
 
     if (firstName == "") {
-
         document.getElementById("fnameError").innerHTML = "This field is required..!!";
         firstName.focus();
     } else {
