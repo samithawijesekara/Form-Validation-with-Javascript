@@ -69,7 +69,6 @@ function register() {
 
 
 
-
     if (rePassword == "") {
         document.getElementById("rePasswordError").innerHTML = "This field is required..!!";
         $(document).ready(function() {
