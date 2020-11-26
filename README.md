@@ -21,7 +21,7 @@ In this project, I used **HTML** to make a basic structure of the form. I have u
 
 The user should have to fill all fields. In the Quantity section, the user should fill numbers between 0 to 13. (That means 1 to 12 only.) Also, two of the password fields should be matched together. Otherwise, the user can't submit the form.
 
-<img src="img/bb.JPG"><br>
+<img src="img/b.JPG"><br>
 
 <img src="img/c.JPG"><br><br>
 
